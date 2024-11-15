@@ -1,0 +1,20 @@
+.error-message {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #fee2e2;
+    border: 1px solid #ef4444;
+    border-radius: 0.5rem;
+    color: #dc2626;
+  }
+  
+  .error-message i {
+    font-size: 1.5rem;
+  }
+  
+  .error-message p {
+    margin: 0;
+    font-size: 1rem;
+  }

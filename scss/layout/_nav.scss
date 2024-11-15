@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: $color-accent-1;
+  height: 6rem;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-size: 2.7rem;
+    text-decoration: none;
+    color: $color-accent-2;
+
+    &:hover,
+    :active {
+      color: $color-secondary;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

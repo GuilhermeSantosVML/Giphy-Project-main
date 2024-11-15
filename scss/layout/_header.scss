@@ -1,0 +1,22 @@
+@import "../abstracts/variables";
+
+.header {
+  display: grid;
+  grid-row: 1 ;
+  grid-column: 1 / -1;
+  height: 100%;
+  background-color: $color-secondary;
+  font-size: 1.8rem;
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    height: 100%;
+    color: $color-tertiary;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    text-stroke: 1px rgb(255, 255, 255);
+    letter-spacing: 2px;
+  }
+}

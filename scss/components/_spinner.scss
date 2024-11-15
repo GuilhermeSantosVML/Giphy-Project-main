@@ -1,0 +1,10 @@
+@import "../base/animations";
+
+.loading-spinner {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 5rem;
+  animation: spin 1.75s linear infinite;
+  z-index: 1000;
+}

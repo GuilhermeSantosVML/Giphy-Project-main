@@ -1,0 +1,30 @@
+.section__random {
+  display: grid;
+  grid-row: 3 / 5;
+}
+
+.section__finder {
+  display: grid;
+  grid-row: 5 / 7;
+
+  &-input--container {
+    display: flex;
+    flex-direction: column;
+    margin-top: -3rem;
+  }
+
+  &-input--label {
+    font-size: 1.8rem;
+    margin-left: 2rem;
+  }
+
+  &-input {
+    height: 3.5rem;
+    width: 25rem;
+    border: none;
+    margin-left: 2rem;
+  }
+}
+
+.section__trending {
+}

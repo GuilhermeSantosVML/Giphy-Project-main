@@ -1,0 +1,9 @@
+@import "../abstracts/variables";
+
+.section__title {
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    color: $color-accent-3;
+    font-size: 2.8rem;
+    margin: 1rem 0 2rem 2rem;
+}
