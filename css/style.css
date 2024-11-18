@@ -12,6 +12,11 @@ html {
   height: 100%;
   margin: 0;
 }
+@media only screen and (max-width: 61.25em) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   font-size: 1.4rem;
@@ -31,6 +36,7 @@ body {
 .error-message {
   display: flex;
   align-items: center;
+  height: 5rem;
   gap: 1rem;
   padding: 1rem;
   margin: 1rem 0;
@@ -41,12 +47,11 @@ body {
 }
 
 .error-message i {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .error-message p {
-  margin: 0;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .pagination {
@@ -61,13 +66,17 @@ body {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 4px;
-  background-color: #f0f0f0;
+  background-color: rgb(255, 111, 0);
   cursor: pointer;
   transition: background-color 0.2s;
 }
 
 .pagination__button:hover:not(:disabled) {
-  background-color: #e0e0e0;
+  background-color: rgb(255, 125.4, 25.5);
+}
+.pagination__button:hover:not(:disabled):active {
+  transform: scale(0.99);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .pagination__button:disabled {
@@ -76,8 +85,8 @@ body {
 }
 
 .pagination__indicator {
-  font-size: 0.9rem;
-  color: #666;
+  font-size: 1.5rem;
+  color: #060606;
 }
 
 .button {
@@ -105,6 +114,16 @@ body {
   font-size: 2rem;
 }
 
+@media screen and (min-width: 37.5em) {
+  .button {
+    width: 80%;
+    justify-self: center;
+  }
+  .button__text {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+  }
+}
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -149,6 +168,27 @@ body {
   object-fit: contain;
 }
 
+.search-results,
+.trending-results-container {
+  position: relative;
+  height: fit-content;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 61.25em) {
+  .search-results {
+    padding: 1rem;
+    position: relative;
+    height: fit-content;
+    min-height: 200px;
+    width: fit-content;
+    max-width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
 .header {
   display: grid;
   grid-row: 1;
@@ -169,6 +209,17 @@ body {
   letter-spacing: 2px;
 }
 
+@media screen and (min-width: 61.25em) {
+  .header {
+    grid-row: 1;
+    height: 60px;
+  }
+  .header__title {
+    font-size: 3rem;
+    margin-left: 10rem;
+    justify-self: start;
+  }
+}
 .nav {
   display: flex;
   justify-content: space-around;
@@ -192,6 +243,11 @@ body {
   justify-content: space-between;
 }
 
+@media screen and (min-width: 61.25em) {
+  .nav {
+    display: none;
+  }
+}
 .section__random {
   display: grid;
   grid-row: 3/5;
@@ -215,6 +271,58 @@ body {
   width: 25rem;
   border: none;
   margin-left: 2rem;
+}
+
+@media screen and (min-width: 980px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 60px 1fr;
+    gap: 2rem;
+  }
+  .section__random {
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    grid-column: 1/2;
+    grid-row: 2;
+    padding: 2rem;
+    border-right: 1px solid #ccc;
+  }
+  .section__finder {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2;
+    padding: 2rem;
+    border-right: 1px solid #ccc;
+    align-content: start;
+    position: relative;
+  }
+  .section__finder-input--container {
+    margin-top: 0;
+  }
+  .section__finder-input--label {
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .section__finder-input {
+    height: 3.5rem;
+    width: 60%;
+    max-width: 600px;
+    margin-left: 2rem;
+  }
+  .section__finder .button {
+    position: absolute;
+    top: 10.3rem;
+    margin-left: 65%;
+    width: 15rem;
+  }
+  .section__trending {
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 2;
+    padding: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

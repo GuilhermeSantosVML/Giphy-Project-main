@@ -1,6 +1,16 @@
+// Colors
+
 $color-primary: rgb(0, 143, 153);
 $color-secondary: rgb(255, 111, 0);
 $color-tertiary: rgb(0, 0, 0);
 $color-accent-1: rgb(1, 137, 135);
 $color-accent-2: rgb(0, 0, 0);
 $color-accent-3: rgb(222, 222, 222);
+
+
+// BreakPoints
+
+$bp-large: 78.15em; // 1250px
+$bp-medium: 61.25em; // 980px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px

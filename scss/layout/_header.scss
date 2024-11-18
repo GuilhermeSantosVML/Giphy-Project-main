@@ -2,7 +2,7 @@
 
 .header {
   display: grid;
-  grid-row: 1 ;
+  grid-row: 1;
   grid-column: 1 / -1;
   height: 100%;
   background-color: $color-secondary;
@@ -18,5 +18,19 @@
     -webkit-text-stroke: 1px rgb(255, 255, 255);
     text-stroke: 1px rgb(255, 255, 255);
     letter-spacing: 2px;
+  }
+}
+
+@media screen and (min-width: $bp-medium) {
+  .header {
+    grid-row: 1;
+    height: 60px;
+    
+
+    &__title {
+      font-size: 3rem;
+      margin-left: 10rem;
+      justify-self: start;
+    }
   }
 }

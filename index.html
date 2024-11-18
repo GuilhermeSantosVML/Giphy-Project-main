@@ -1,8 +1,14 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A Giphy project for searching and viewing GIFs"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
@@ -16,21 +22,26 @@
       <header class="header">
         <h1 class="header__title">Giphy Project</h1>
       </header>
-      <nav class="nav">
-        <a href="#random" class="nav__link">
-          <i class="nav__icon fa-solid fa-image"></i>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#random" class="nav__link" aria-current="page">
+          <i class="nav__icon fa-solid fa-image" aria-hidden="true"></i>
         </a>
         <a href="#finder" class="nav__link">
-          <i class="nav__icon fa-solid fa-magnifying-glass"></i>
+          <i
+            class="nav__icon fa-solid fa-magnifying-glass"
+            aria-hidden="true"
+          ></i>
         </a>
         <a href="#trending" class="nav__link">
           <i class="nav__icon fa-solid fa-thumbs-up" aria-hidden="true"></i>
         </a>
       </nav>
-
-      <section class="section__random">
-        <h2 class="section__title">Random</h2>
-        <div class="img__container">
+      <section class="section__random" aria-labelledby="random">
+        <h2 id="random" class="section__title">Random</h2>
+        <div
+          class="img__container"
+          aria-label="Random GIF will be displayed here"
+        >
           <svg
             class="loading-spinner"
             role="status"
@@ -42,14 +53,17 @@
             ></path>
           </svg>
         </div>
-        <button href="#" class="button section__random-button--next">
+        <button
+          class="button section__random-button--next"
+          aria-label="Load next random GIF"
+        >
           <i class="button__icon fa-solid fa-repeat" aria-hidden="true"></i>
           <span class="button__text">next</span>
         </button>
       </section>
 
-      <section class="section__finder">
-        <h2 class="section__title">Finder</h2>
+      <section class="section__finder" aria-labelledby="finder">
+        <h2 id="finder" class="section__title">Finder</h2>
         <form
           action="#"
           role="search"
@@ -64,19 +78,26 @@
             >
             <input
               class="section__finder-input"
-              id="search"
+              id="section-finder__input"
               name="search"
               type="text"
+              required
+              aria-required="true"
             />
           </div>
-          <button class="button" type="submit" aria-label="Search button">
-            <i class="button__icon fa-solid fa-search"></i>
+          <button class="button" type="submit" aria-label="Search for GIFs">
+            <i class="button__icon fa-solid fa-search" aria-hidden="true"></i>
             <span class="button__text">Search</span>
           </button>
         </form>
       </section>
-      <section class="section__trending">
-        <h2 class="section__title">Trending</h2>
+
+      <section class="section__trending" aria-labelledby="trending">
+        <h2 id="trending" class="section__title">Trending</h2>
+        <div
+          class="img__container"
+          aria-label="Trending GIFs will be displayed here"
+        ></div>
       </section>
     </div>
   </body>

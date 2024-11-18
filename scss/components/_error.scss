@@ -1,6 +1,7 @@
 .error-message {
     display: flex;
     align-items: center;
+    height: 5rem;
     gap: 1rem;
     padding: 1rem;
     margin: 1rem 0;
@@ -11,10 +12,9 @@
   }
   
   .error-message i {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   
   .error-message p {
-    margin: 0;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }

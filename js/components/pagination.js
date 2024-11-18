@@ -11,8 +11,7 @@ export default class Pagination {
   render(totalItems) {
     this.totalPages = Math.ceil(totalItems / GIFS_PER_PAGE);
     
-    // Remove existing pagination if any
-    const existingPagination = this.container.querySelector('.pagination');
+   const existingPagination = this.container.querySelector('.pagination');
     if (existingPagination) {
       existingPagination.remove();
     }
